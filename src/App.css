@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+.card {
+  @apply p-8 bg-[var(--color-primary-500)] rounded-lg shadow-lg text-white;
+}
+
+button {
+  @apply rounded-md bg-gradient-to-r from-[var(--color-primary-500)] to-[var(--color-primary-700)] px-6 py-2 font-semibold text-white hover:opacity-90 disabled:from-[var(--color-gray-700)] disabled:to-[var(--color-gray-700)] disabled:text-black disabled:opacity-50;
+}
+
+input[type="text"] {
+  @apply rounded-md border-2 border-[var(--color-primary-500)] bg-[var(--color-gray-700)] px-2 py-1 text-black shadow-lg outline-none focus:border-[var(--color-primary-700)];
+}
+
+.read-the-docs {
+  color: #555;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, label {
+  color: black;
+}
+
+.text-secondary {
+  color: #555;
+}
+
+.sidebar-title {
+  @apply text-white;
+}

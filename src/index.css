@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@theme {
+  --color-primary-500: #16a34a;
+  --color-primary-700: #15803d;
+  --color-gray-700: #d1fae5; 
+  --font-manrope: "Manrope", sans-serif;
+}
+
+body {
+  @apply bg-white font-[var(--font-manrope)] text-black p-4;
+  margin: 0;
+}
+
+#root {
+  @apply bg-white;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
